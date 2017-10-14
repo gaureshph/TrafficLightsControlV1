@@ -9,5 +9,7 @@ namespace TrafficLightsControlV1.Web.DbContexts
         {
         }
         public DbSet<SystemWideSetting> SystemWideSettings { get; set; }
+        public DbSet<TrafficJunction> TrafficJunctions { get; set; }
+        public DbSet<TrafficSignal> TrafficSignals { get; set; }
     }
 }

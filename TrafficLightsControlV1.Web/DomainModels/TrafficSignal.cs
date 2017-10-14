@@ -22,5 +22,7 @@ namespace TrafficLightsControlV1.Web.DomainModels
         public ExitDirection ExitDirection { get; set; }
 
         public bool IsGreen { get; set; }
+
+        public int SignalTime { get; set; }
     }
 }

@@ -26,6 +26,46 @@ namespace TrafficLightsControlV1.Web.Migrations
                 });
                 context.SaveChanges();
             }
+
+            if(context.TrafficJunctions.Count() <= 0)
+            {
+                context.TrafficJunctions.Add(new DomainModels.TrafficJunction { Name = "Demo Junction" });
+                context.SaveChanges();
+            }
+
+            if(context.TrafficSignals.Count() <= 0)
+            {
+                var firstJunction = context.TrafficJunctions.FirstOrDefault();
+                context.TrafficSignals.Add(new DomainModels.TrafficSignal
+                {
+                    ExitDirection = Enums.ExitDirection.EXITUP,
+                    IsGreen = false,
+                    TrafficJunction_Id = firstJunction.Id,
+                    SignalTime = 2
+                });
+                context.TrafficSignals.Add(new DomainModels.TrafficSignal
+                {
+                    ExitDirection = Enums.ExitDirection.EXITRIGHT,
+                    IsGreen = false,
+                    TrafficJunction_Id = firstJunction.Id,
+                    SignalTime = 2
+                });
+                context.TrafficSignals.Add(new DomainModels.TrafficSignal
+                {
+                    ExitDirection = Enums.ExitDirection.EXITDOWN,
+                    IsGreen = false,
+                    TrafficJunction_Id = firstJunction.Id,
+                    SignalTime = 2
+                });
+                context.TrafficSignals.Add(new DomainModels.TrafficSignal
+                {
+                    ExitDirection = Enums.ExitDirection.EXITLEFT,
+                    IsGreen = false,
+                    TrafficJunction_Id = firstJunction.Id,
+                    SignalTime = 2
+                });
+                context.SaveChanges();
+            }
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

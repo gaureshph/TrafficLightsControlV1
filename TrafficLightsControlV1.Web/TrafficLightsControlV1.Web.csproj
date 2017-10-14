@@ -162,6 +162,18 @@
     <Compile Include="Migrations\201710141106000_InitialConfig.Designer.cs">
       <DependentUpon>201710141106000_InitialConfig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710141122238_AddedTrafficJunctionAndSignal.cs" />
+    <Compile Include="Migrations\201710141122238_AddedTrafficJunctionAndSignal.Designer.cs">
+      <DependentUpon>201710141122238_AddedTrafficJunctionAndSignal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141129432_AddedJunctionsAndSignals2.cs" />
+    <Compile Include="Migrations\201710141129432_AddedJunctionsAndSignals2.Designer.cs">
+      <DependentUpon>201710141129432_AddedJunctionsAndSignals2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710141131089_AddedSignalTimeToEachSignal.cs" />
+    <Compile Include="Migrations\201710141131089_AddedSignalTimeToEachSignal.Designer.cs">
+      <DependentUpon>201710141131089_AddedSignalTimeToEachSignal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -223,6 +235,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710141106000_InitialConfig.resx">
       <DependentUpon>201710141106000_InitialConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141122238_AddedTrafficJunctionAndSignal.resx">
+      <DependentUpon>201710141122238_AddedTrafficJunctionAndSignal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141129432_AddedJunctionsAndSignals2.resx">
+      <DependentUpon>201710141129432_AddedJunctionsAndSignals2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710141131089_AddedSignalTimeToEachSignal.resx">
+      <DependentUpon>201710141131089_AddedSignalTimeToEachSignal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
