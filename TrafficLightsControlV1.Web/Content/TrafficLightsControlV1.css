@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     overflow: hidden;
-    background: url(../Images/traffic-lights-control-background.png) no-repeat center center fixed;
+    background: url(../../Images/traffic-lights-control-background.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,7 +9,13 @@
 }
 
 .trafficSignalStatusContainer {
-    background: url(../Images/traffic-junction-image.jpg);
+    height: 400px;
+    width: 400px;
+    background: url(../../Images/traffic-junction-image.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #header {

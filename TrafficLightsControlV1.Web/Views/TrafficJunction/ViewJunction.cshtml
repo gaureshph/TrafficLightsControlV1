@@ -9,46 +9,89 @@
 </head>
 <body>
     <h4>@Model.JunctionName</h4>
-    <div class="trafficSignalStatusContainer"></div>
-    @foreach (var signal in Model.TrafficSignals)
-    {
-        switch (signal.ExitDirection)
-        {
-            case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITUP:
-                <div>
-                    Traffic Signal At Exit 1
-                </div>
-                break;
-            case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITRIGHT:
-                <div>
-                    Traffic Signal At Exit 2
-                </div>
-                break;
-            case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITDOWN:
-                <div>
-                    Traffic Signal At Exit 3
-                </div>
-                break;
-            case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITLEFT:
-                <div>
-                    Traffic Signal At Exit 4
-                </div>
-                break;
-        }
-        <div>
-            @if (!Model.IsSystemOn)
-            {
-                <div style="width:20px; height:20px; border-radius:10px;background-color:gray;display:inline-block;"></div>
-            }
-            else if (signal.IsGreen)
-            {
-                <div style="width:20px; height:20px; border-radius:10px;background-color:green;display:inline-block;"></div>
-            }
-            else
-            {
-                <div style="width:20px; height: 20px; border-radius:10px;background-color:red;display:inline-block;"></div>
-            }
-        </div>
-    }
+    <h5>@(Model.IsSystemOn ? "The Traffic Signal System is ON!" : "The Traffic Signal System is OFF! Click on Cog Icon to Turn it ON.")</h5>
+    <div class="trafficSignalStatusContainer">
+         @foreach (var signal in Model.TrafficSignals) {
+             switch (signal.ExitDirection)
+             {
+                 case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITUP:
+                     <div style="position:relative;top:65px;left:85px;color:aqua;font-weight:900;">
+                        Traffic Signal At Exit 1
+                    </div>
+            <div style="position:relative;top:75px;left:85px;">
+                @if (!Model.IsSystemOn)
+                {
+                    <div style="width:20px; height:20px; border-radius:10px;background-color:gray;display:inline-block;"></div>
+                }
+                else if (signal.IsGreen)
+                {
+                    <div style="width:20px; height:20px; border-radius:10px;background-color:green;display:inline-block;"></div>
+                }
+                else
+                {
+                    <div style="width:20px; height: 20px; border-radius:10px;background-color:red;display:inline-block;"></div>
+                }
+            </div>
+                     break;
+                 case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITRIGHT:
+                    <div style="position:relative;top:50px;left:220px;color:aqua;font-weight:900;">
+                        Traffic Signal At Exit 2
+                    </div>
+                    <div style="position:relative;top:60px;left:220px;">
+                        @if (!Model.IsSystemOn)
+                        {
+                            <div style="width:20px; height:20px; border-radius:10px;background-color:gray;display:inline-block;"></div>
+                        }
+                        else if (signal.IsGreen)
+                        {
+                            <div style="width:20px; height:20px; border-radius:10px;background-color:green;display:inline-block;"></div>
+                        }
+                        else
+                        {
+                            <div style="width:20px; height: 20px; border-radius:10px;background-color:red;display:inline-block;"></div>
+                        }
+                    </div>
+                     break;
+                 case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITDOWN:
+                    <div style="position:relative;top:130px;left:220px;color:aqua;font-weight:900;">
+                        Traffic Signal At Exit 3
+                    </div>
+                    <div style="position:relative;top:140px;left:220px;">
+                        @if (!Model.IsSystemOn)
+                        {
+                            <div style="width:20px; height:20px; border-radius:10px;background-color:gray;display:inline-block;"></div>
+                        }
+                        else if (signal.IsGreen)
+                        {
+                            <div style="width:20px; height:20px; border-radius:10px;background-color:green;display:inline-block;"></div>
+                        }
+                        else
+                        {
+                            <div style="width:20px; height: 20px; border-radius:10px;background-color:red;display:inline-block;"></div>
+                        }
+                    </div>
+                     break;
+                 case TrafficLightsControlV1.Web.Enums.ExitDirection.EXITLEFT:
+                    <div style="position:relative;top:75px;left:75px;color:aqua;font-weight:900;">
+                        Traffic Signal At Exit 4
+                    </div>
+                    <div style="position:relative;top:85px;left:75px;">
+                        @if (!Model.IsSystemOn)
+                        {
+                            <div style="width:20px; height:20px; border-radius:10px;background-color:gray;display:inline-block;"></div>
+                        }
+                        else if (signal.IsGreen)
+                        {
+                            <div style="width:20px; height:20px; border-radius:10px;background-color:green;display:inline-block;"></div>
+                        }
+                        else
+                        {
+                            <div style="width:20px; height: 20px; border-radius:10px;background-color:red;display:inline-block;"></div>
+                        }
+                    </div>
+                     break;
+             }
+         }
+    </div>
 </body>
 </html>

@@ -28,7 +28,7 @@ namespace TrafficLightsControlV1.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/CustomStyles/TrafficLightsControlV1.css"));
+                      "~/Content/TrafficLightsControlV1.css"));
         }
     }
 }
