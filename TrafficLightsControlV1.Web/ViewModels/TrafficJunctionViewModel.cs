@@ -10,6 +10,7 @@ namespace TrafficLightsControlV1.Web
     {
         public int JunctionId { get; set; }
         public string JunctionName { get; set; }
+        public bool IsSystemOn { get; set; }
         public IEnumerable<TrafficSignal> TrafficSignals { get; set; }
     }
 }
