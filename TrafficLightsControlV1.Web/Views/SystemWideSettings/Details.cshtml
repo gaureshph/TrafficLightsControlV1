@@ -1,0 +1,62 @@
+﻿@model TrafficLightsControlV1.Web.DomainModels.SystemWideSetting
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>System Wide Settings</title>
+</head>
+<body>
+    <div>
+        <h4>SystemWideSetting</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IsActive)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Signal1Time)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Signal1Time)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Signal2Time)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Signal2Time)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Signal3Time)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Signal3Time)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Signal4Time)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Signal4Time)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back To Junctions List", "Index", "TrafficJunction")
+    </p>
+</body>
+</html>

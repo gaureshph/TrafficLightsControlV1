@@ -13,7 +13,7 @@ namespace TrafficLightsControlV1.Web.Controllers
         // GET: TrafficJunction
         public ActionResult Index()
         {
-            return View();
+            return View(_context.TrafficJunctions.ToList());
         }
 
         // GET: TrafficJunction/Create
