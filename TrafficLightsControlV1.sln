@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLightsControlV1.Web", "TrafficLightsControlV1.Web\TrafficLightsControlV1.Web.csproj", "{8DD2848D-A7F6-4D23-BC60-1BB030FF4613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLightsControlV1.Web.Tests", "TrafficLightsControlV1.Web.Tests\TrafficLightsControlV1.Web.Tests.csproj", "{A5221EC9-EFD4-4F57-AB12-64AAF1D958EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DD2848D-A7F6-4D23-BC60-1BB030FF4613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD2848D-A7F6-4D23-BC60-1BB030FF4613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD2848D-A7F6-4D23-BC60-1BB030FF4613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD2848D-A7F6-4D23-BC60-1BB030FF4613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5221EC9-EFD4-4F57-AB12-64AAF1D958EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5221EC9-EFD4-4F57-AB12-64AAF1D958EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5221EC9-EFD4-4F57-AB12-64AAF1D958EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5221EC9-EFD4-4F57-AB12-64AAF1D958EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6234FA9-6E94-4AD0-9BBC-15353F96C9D2}
+	EndGlobalSection
+EndGlobal
