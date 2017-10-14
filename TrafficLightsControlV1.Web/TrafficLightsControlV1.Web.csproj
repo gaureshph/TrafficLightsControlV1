@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SystemWideSettingsController.cs" />
+    <Compile Include="Controllers\TrafficJunctionController.cs" />
     <Compile Include="DbContexts\TrafficLightsControlV1DbContext.cs" />
     <Compile Include="DomainModels\SystemWideSetting.cs" />
     <Compile Include="DomainModels\TrafficJunction.cs" />
@@ -218,6 +219,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\SystemWideSettings\" />
+    <Folder Include="Views\TrafficJunction\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
