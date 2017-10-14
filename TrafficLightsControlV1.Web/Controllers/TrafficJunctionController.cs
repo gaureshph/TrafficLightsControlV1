@@ -17,6 +17,15 @@ namespace TrafficLightsControlV1.Web.Controllers
             return View(_context.TrafficJunctions.ToList());
         }
 
+        public ActionResult ViewJunction(int id)
+        {
+            return View(new TrafficJunctionViewModel
+            {
+                JunctionId = id,
+                TrafficSignals = _context.TrafficSignals.Where(lmb => lmb.TrafficJunction_Id == id).ToList()
+            });
+        }
+
         // GET: TrafficJunction/Create
         public ActionResult Create()
         {
